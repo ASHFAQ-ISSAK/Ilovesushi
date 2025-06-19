@@ -962,7 +962,15 @@ body.modal-open {
 }
 
 .hero-section {
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.postimg.cc/RZW2cdLm/sushi-banner.jpg') no-repeat center center/cover;  color: var(--white-color);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+              url('https://i.postimg.cc/RZW2cdLm/sushi-banner.jpg');
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  width: 100%;
+  min-width: 100%;
+  color: var(--white-color);
   text-align: center;
   padding: 100px 20px;
   min-height: 50vh;
@@ -970,6 +978,8 @@ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https:
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
+  margin: 0;
 }
 
 .hero-title {
@@ -1500,5 +1510,24 @@ background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https:
     width: 100%; /* Full width buttons on small screens */
     margin-right: 0;
   }
+  @media (max-width: 768px) {
+  .hero-section {
+    background-attachment: scroll; /* Ensure this is set for mobile */
+    background-size: cover;
+    background-position: left center;
+    min-height: 60vh;
+    padding: 80px 15px;
+    width: 100%;
+    margin: 0;
+  }
+  
+  .hero-title {
+    font-size: 2.5em;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2em;
+  }
+}
 }
 </style>
