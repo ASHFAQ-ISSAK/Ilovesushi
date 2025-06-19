@@ -962,7 +962,7 @@ body.modal-open {
 }
 
 .hero-section {
-background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.ibb.co/23gKxhcK/sushi-banner.jpg') no-repeat center center/cover;  color: var(--white-color);
+background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./static/sushi-banner.jpg') no-repeat center center/cover;  color: var(--white-color);
   text-align: center;
   padding: 100px 20px;
   min-height: 50vh;
