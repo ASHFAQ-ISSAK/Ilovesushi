@@ -252,6 +252,7 @@
 
 <script setup>
 import { ref, computed, onMounted } from 'vue';
+import { inject } from "@vercel/analytics"
 
 // Reactive state for sushi data and filtering
 const sushiData = ref([
@@ -1339,7 +1340,6 @@ body.modal-open {
   list-style: none;
   color: #555;
   list-syle:none;
-  border-color:none;
 
 }
 
